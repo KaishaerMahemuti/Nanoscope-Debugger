@@ -1,0 +1,59 @@
+{
+  "name": "nanoscope-debugger",
+  "displayName": "Nanoscope Debugger",
+  "description": "An AI-powered bug fixer for VS Code",
+  "version": "0.0.1",
+  "icon": "icon.png", 
+  "publisher": "kaishaerdev",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": ["Other"],
+  "main": "src/extension.js",
+  "activationEvents": [
+    "onCommand:ai-bug-fixer.analyzeError"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-bug-fixer.analyzeError",
+        "title": "Analyze Error with AI"
+      }
+    ],
+    "configuration": {
+      "properties": {
+        "aiBugFixer.openaiApiKey": {
+          "type": "string",
+          "description": "Your OpenAI API Key for AI Bug Fixer",
+          "scope": "machine"
+        }
+      }
+    }
+  },
+  "keywords": ["debug", "AI", "openai", "chatgpt", "fix", "error", "assistant"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaishaerMahemuti/Nanoscope-Debugger"
+  },
+  "bugs": {
+    "url": "https://github.com/KaishaerMahemuti/Nanoscope-Debugger/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.97.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.19.0"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.5.0"
+  }
+}

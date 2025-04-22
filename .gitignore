@@ -1,0 +1,9 @@
+# Ignore VS Code settings.json where API key is stored
+.vscode/settings.json
+
+# Node modules should not be committed
+node_modules/
+
+# Ignore environment files
+.env
+.vscode-test/
