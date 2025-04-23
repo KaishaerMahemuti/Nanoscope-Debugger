@@ -2,7 +2,7 @@
   "name": "nanoscope-debugger",
   "displayName": "Nanoscope Debugger",
   "description": "An AI-powered bug fixer for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "icon.png", 
   "publisher": "kaishaerdev",
   "engines": {
