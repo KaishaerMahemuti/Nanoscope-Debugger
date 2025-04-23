@@ -24,7 +24,7 @@ async function analyzeErrorMessage(errorMessage) {
 async function getAIAnalysis(errorMessage) {
     try {
         const response = await axios.post(
-            "http://localhost:3000/api/openai", // Or your deployed proxy URL later
+            "https://nanoscope-proxy.onrender.com/api/openai",
             {
                 model: "gpt-3.5-turbo",
                 messages: [
