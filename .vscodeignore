@@ -2,7 +2,6 @@
 .vscode-test/**
 test/**
 .gitignore
-.env
 .yarnrc
 vsc-extension-quickstart.md
 **/jsconfig.json

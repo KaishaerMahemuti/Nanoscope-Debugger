@@ -5,5 +5,4 @@
 node_modules/
 
 # Ignore environment files
-.env
 .vscode-test/

@@ -22,22 +22,9 @@ async function analyzeErrorMessage(errorMessage) {
  * Sends the error log or user question to OpenAI for debugging analysis and suggested fixes.
  */
 async function getAIAnalysis(errorMessage) {
-    require("dotenv").config({ path: __dirname + "/.env" });
-
-
-
-    //const apiKey = process.env.OPENAI_API_KEY;
-    const apiKey = process.env.OPENAI_API_KEY 
-
-
-    if (!apiKey) {
-        vscode.window.showErrorMessage("❌ OpenAI API key is not set. Please add it to your .env file.");
-        return "No API key found.";
-    }
-
     try {
         const response = await axios.post(
-            "https://api.openai.com/v1/chat/completions",
+            "http://localhost:3000/api/openai", // Or your deployed proxy URL later
             {
                 model: "gpt-3.5-turbo",
                 messages: [
@@ -50,12 +37,6 @@ async function getAIAnalysis(errorMessage) {
                         content: errorMessage,
                     },
                 ],
-            },
-            {
-                headers: {
-                    Authorization: `Bearer ${apiKey}`,
-                    "Content-Type": "application/json",
-                },
             }
         );
 
@@ -65,6 +46,7 @@ async function getAIAnalysis(errorMessage) {
         return "Error fetching AI response.";
     }
 }
+
 
 /**
  * Fetches relevant solutions from Stack Overflow based on the error message.
