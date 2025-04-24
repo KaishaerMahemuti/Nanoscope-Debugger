@@ -1,7 +1,7 @@
-# **AI Bug Fixer - VS Code Extension**
+# **Nanoscope Debugger - VS Code Extension**
 
 ## **📌 Overview**
-**AI Bug Fixer** is a powerful **VS Code extension** that helps developers analyze and fix error messages using **OpenAI's API** and **Stack Overflow data**. It can process **syntax errors from the editor** and **runtime errors from the terminal**, offering **real-time debugging assistance** and an **interactive AI chat window**.
+**Nanoscope Debugger** is a powerful **VS Code extension** that helps developers analyze and fix error messages using **OpenAI's API** and **Stack Overflow data**. It can process **syntax errors from the editor** and **runtime errors from the terminal**, offering **real-time debugging assistance** and an **interactive AI chat window**.
 
 ## **🚀 Features**
 ✅ **AI-Powered Error Analysis** - Detects and explains errors in code.
