@@ -16,7 +16,7 @@
 ## **🛠 Installation**
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/ai-bug-fixer-vscode.git
+   git clone https://github.com/KaishaerMahemuti/Nanoscope-Debugger
    cd ai-bug-fixer-vscode
    ```
 2. **Install dependencies:**
